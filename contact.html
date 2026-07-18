@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sport Kit Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="glass-nav">
+        <nav class="container nav-container">
+            <a href="index.html" class="logo"><i class="fa-solid fa-bolt"></i> SportKit</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="buy-now.html">Shop</a></li>
+                <li><a href="request-form.html">Bulk/Academy</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <button class="hamburger" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container section-padding">
+        <h1 class="text-center mb-2">Get In Touch</h1>
+        <div class="grid-2">
+            <!-- Contact Form -->
+            <div class="glass-card">
+                <h2>Send a Message</h2>
+                <form id="contact-form" class="custom-form mt-1" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p id="contact-success" class="success-msg hidden mt-1">Message sent successfully!</p>
+                </form>
+            </div>
+
+            <!-- Contact Info & Map -->
+            <div class="glass-card">
+                <h2>Contact Information</h2>
+                <ul class="contact-info mt-1">
+                    <li><i class="fa-solid fa-location-dot"></i> 123 Stadium Ave, Sports District</li>
+                    <li><i class="fa-solid fa-phone"></i> 9733945460</li>
+                    <li><i class="fa-solid fa-envelope"></i> abhrajyoti2521@gmail.com</li>
+                </ul>
+                
+                <div class="map-container mt-2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1136.216335198031!2d-73.9850961!3d40.748817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU1LjciTiA3M8KwNTknMDYuMyJX!5e0!3m2!1sen!2sus!4v1625680123456!5m2!1sen!2sus" width="100%" height="200" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Accordion -->
+        <div class="glass-card mt-2 max-w-800 mx-auto">
+            <h2 class="text-center mb-1">Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">Do you ship internationally? <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Yes, we ship globally, including special expedited shipping for the upcoming 2026 events.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Can I order custom printed jerseys? <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Absolutely! You can use our Request Form to submit custom designs or academy rosters.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">What is your return policy? <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>We accept returns within 30 days of purchase for non-customized gear in original condition.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Sport Kit Shop. All rights reserved.</p>
+            <p class="mt-1" style="font-weight: 600; color: var(--primary-color);">Designed And Developed By Abhrajyoti Dutta</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy Enrollment & Requests | Sport Kit Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="glass-nav">
+        <nav class="container nav-container">
+            <a href="index.html" class="logo"><i class="fa-solid fa-bolt"></i> SportKit</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="buy-now.html">Shop</a></li>
+                <li><a href="request-form.html" class="active">Bulk/Academy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <button class="hamburger" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container section-padding">
+        <div class="glass-card max-w-800 mx-auto">
+            <h1 class="text-center">Academy Enrollment & Bulk Requests</h1>
+            <p class="text-center subtitle mb-2">Request student academy kits or submit a bulk team order.</p>
+            
+            <form id="request-form" class="custom-form" novalidate>
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label for="req-name">Institution/Academy Name *</label>
+                        <input type="text" id="req-name" class="form-control" required>
+                        <small class="error-text">Please enter the academy name.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="req-email">Contact Email *</label>
+                        <input type="email" id="req-email" class="form-control" required>
+                        <small class="error-text">Please enter a valid email.</small>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="req-type">Request Type *</label>
+                    <select id="req-type" class="form-control" required>
+                        <option value="">-- Select Request Type --</option>
+                        <option value="enrollment">Student Kit Enrollment</option>
+                        <option value="bulk">Bulk Team Jersey Order</option>
+                        <option value="sponsorship">Sponsorship Inquiry</option>
+                    </select>
+                    <small class="error-text">Please select a request type.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="req-details">Additional Details & Roster Sizes *</label>
+                    <textarea id="req-details" class="form-control" rows="5" required></textarea>
+                    <small class="error-text">Please provide details.</small>
+                </div>
+
+                <button type="submit" class="btn btn-primary full-width">Submit Request</button>
+                <div id="req-success" class="success-msg hidden mt-1 text-center">Your request has been successfully submitted! We will contact you shortly.</div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Sport Kit Shop. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
